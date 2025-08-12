@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -o",
+    "start": "npx http-server . -p 3000 -o",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
