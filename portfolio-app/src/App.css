@@ -16,7 +16,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(233, 229, 229, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 1rem 0;
@@ -35,7 +35,7 @@
 .nav-logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #2563eb;
+  color:rgb(24, 84, 214);
 }
 
 .nav-menu {

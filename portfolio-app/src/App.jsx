@@ -68,9 +68,14 @@ function App() {
                 <a href="/Abhinav-Resume.pdf" download="Abhinav-Resume.pdf" className="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-1 border border-blue-500">
                   Download Resume
                 </a>
-                <button className={`px-8 py-4 bg-transparent border-2 ${isDarkTheme ? 'border-white text-white hover:bg-white hover:text-gray-900' : 'border-gray-700 text-gray-700 hover:bg-gray-700 hover:text-white'} rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:-translate-y-1`}>
-                  View Projects
-                </button>
+                <a
+                  href="https://github.com/Abhinavp16"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`px-8 py-4 bg-transparent border-2 ${isDarkTheme ? 'border-white text-white hover:bg-white hover:text-gray-900' : 'border-gray-700 text-gray-700 hover:bg-gray-700 hover:text-white'} rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:-translate-y-1`}
+                >
+                  GitHub
+                </a>
               </div>
             </div>
 
@@ -428,7 +433,7 @@ function App() {
                 {/* Social Links */}
                 <div className="pt-4 space-y-3">
                   <a
-                    href="https://www.linkedin.com/in/abhinav-pandey-0000000000000000000000000000000000000000/"
+                    href="https://www.linkedin.com/in/abhinav-pandey-4900a92a2/"
                     className="flex items-center space-x-3 text-blue-400 hover:text-blue-300 transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -447,7 +452,7 @@ function App() {
                     <span className="font-medium">WhatsApp</span>
                   </a>
                   <a
-                    href="https://github.com/abhinavpandey12201"
+                    href="https://github.com/Abhinavp16"
                     className={`flex items-center space-x-3 ${isDarkTheme ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'} transition-colors`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -455,15 +460,7 @@ function App() {
                     <span className="text-2xl">🐙</span>
                     <span className="font-medium">GitHub</span>
                   </a>
-                  <a
-                    href="https://www.researchgate.net/profile/Abhinav-Pandey-10"
-                    className="flex items-center space-x-3 text-green-400 hover:text-green-300 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className="text-2xl">📚</span>
-                    <span className="font-medium">Research Papers</span>
-                  </a>
+                  
                 </div>
               </div>
             </div>
