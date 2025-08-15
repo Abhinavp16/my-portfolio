@@ -18,25 +18,25 @@ function App() {
     <div className={`portfolio-app ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'}`}>
       {/* Navigation */}
       <nav className={`fixed top-0 w-full ${isDarkTheme ? 'bg-gray-800/95' : 'bg-white/95'} backdrop-blur-lg z-50 shadow-2xl border-b ${isDarkTheme ? 'border-gray-700' : 'border-gray-200'}`}>
-        <div className="max-w-6xl mx-auto px-2 sm:px-4 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-400 animate-slide-up truncate">Abhinav Pandey</div>
+            <div className="text-xl sm:text-2xl font-bold text-blue-400">Abhinav Pandey</div>
             
             {/* Desktop Navigation */}
-            <ul className="hidden md:flex space-x-4 lg:space-x-8">
-              <li><a href="#home" onClick={() => setActiveSection('home')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium hover:scale-105 transform`}>Home</a></li>
-              <li><a href="#about" onClick={() => setActiveSection('about')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium hover:scale-105 transform`}>About</a></li>
-              <li><a href="#skills" onClick={() => setActiveSection('skills')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium hover:scale-105 transform`}>Skills</a></li>
-              <li><a href="#education" onClick={() => setActiveSection('education')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium hover:scale-105 transform`}>Education</a></li>
-              <li><a href="#projects" onClick={() => setActiveSection('projects')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium hover:scale-105 transform`}>Projects</a></li>
-              <li><a href="#research" onClick={() => setActiveSection('research')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium hover:scale-105 transform`}>Research</a></li>
-              <li><a href="#contact" onClick={() => setActiveSection('contact')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium hover:scale-105 transform`}>Contact</a></li>
+            <ul className="hidden md:flex space-x-6 lg:space-x-8">
+              <li><a href="#home" onClick={() => setActiveSection('home')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>Home</a></li>
+              <li><a href="#about" onClick={() => setActiveSection('about')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>About</a></li>
+              <li><a href="#skills" onClick={() => setActiveSection('skills')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>Skills</a></li>
+              <li><a href="#education" onClick={() => setActiveSection('education')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>Education</a></li>
+              <li><a href="#projects" onClick={() => setActiveSection('projects')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>Projects</a></li>
+              <li><a href="#research" onClick={() => setActiveSection('research')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>Research</a></li>
+              <li><a href="#contact" onClick={() => setActiveSection('contact')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>Contact</a></li>
             </ul>
             
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg transition-all duration-300 transform hover:scale-105"
+              className="md:hidden p-2 rounded-lg transition-all duration-300"
               title="Toggle Menu"
             >
               <div className={`w-6 h-0.5 mb-1.5 transition-all duration-300 ${isDarkTheme ? 'bg-white' : 'bg-gray-700'} ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
@@ -47,7 +47,7 @@ function App() {
             {/* Theme Toggle Button */}
             <button
               onClick={toggleTheme}
-              className={`p-2 rounded-lg transition-all duration-300 transform hover:scale-105 ${isDarkTheme ? 'bg-gray-700 hover:bg-gray-600 text-yellow-400' : 'bg-gray-200 hover:bg-gray-300 text-gray-700'}`}
+              className={`p-2 rounded-lg transition-all duration-300 ${isDarkTheme ? 'bg-gray-700 hover:bg-gray-600 text-yellow-400' : 'bg-gray-200 hover:bg-gray-300 text-gray-700'}`}
               title={isDarkTheme ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
             >
               {isDarkTheme ? '☀️' : '🌙'}
@@ -70,9 +70,9 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className={`min-h-screen flex items-center justify-center ${isDarkTheme ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900' : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'} text-white relative overflow-hidden`}>
+      <section id="home" className={`min-h-screen flex items-center justify-center pt-16 ${isDarkTheme ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900' : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'} text-white relative overflow-hidden`}>
         <div className={`absolute inset-0 ${isDarkTheme ? 'bg-black/20' : 'bg-white/20'}`}></div>
-        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className={`text-left space-y-8 ${isVisible ? 'animate-slide-up' : ''}`}>
