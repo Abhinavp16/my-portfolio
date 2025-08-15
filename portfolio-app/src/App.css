@@ -69,7 +69,7 @@
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   text-align: center;
-  padding: 6rem 1rem 2rem 1rem;
+  padding: 8rem 1rem 4rem 1rem;
   overflow: hidden;
 }
 
@@ -554,7 +554,7 @@ section h2 {
   }
   
   .hero {
-    padding: 5rem 0.5rem 1rem 0.5rem;
+    padding: 6rem 0.5rem 2rem 0.5rem;
   }
   
   .hero-content h1 {
@@ -626,7 +626,7 @@ section h2 {
   }
   
   .hero {
-    padding: 6rem 1.5rem 2rem 1.5rem;
+    padding: 7rem 1.5rem 3rem 1.5rem;
   }
   
   .hero-buttons {
@@ -672,7 +672,7 @@ section h2 {
   }
   
   .hero {
-    padding: 6rem 2rem 2rem 2rem;
+    padding: 8rem 2rem 4rem 2rem;
   }
   
   .about-content {

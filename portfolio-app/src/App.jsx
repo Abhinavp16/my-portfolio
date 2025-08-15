@@ -70,7 +70,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className={`min-h-screen flex items-center justify-center pt-16 ${isDarkTheme ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900' : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'} text-white relative overflow-hidden`}>
+      <section id="home" className={`min-h-screen flex items-center justify-center pt-20 pb-8 ${isDarkTheme ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900' : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'} text-white relative overflow-hidden`}>
         <div className={`absolute inset-0 ${isDarkTheme ? 'bg-black/20' : 'bg-white/20'}`}></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
