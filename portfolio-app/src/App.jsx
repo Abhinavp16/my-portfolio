@@ -24,13 +24,13 @@ function App() {
             
             {/* Desktop Navigation */}
             <ul className="hidden md:flex space-x-6 lg:space-x-8">
-              <li><a href="#home" onClick={() => setActiveSection('home')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>Home</a></li>
-              <li><a href="#about" onClick={() => setActiveSection('about')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>About</a></li>
-              <li><a href="#skills" onClick={() => setActiveSection('skills')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>Skills</a></li>
-              <li><a href="#education" onClick={() => setActiveSection('education')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>Education</a></li>
-              <li><a href="#projects" onClick={() => setActiveSection('projects')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>Projects</a></li>
-              <li><a href="#research" onClick={() => setActiveSection('research')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>Research</a></li>
-              <li><a href="#contact" onClick={() => setActiveSection('contact')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium`}>Contact</a></li>
+              <li><a href="#home" onClick={() => setActiveSection('home')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium whitespace-nowrap`}>Home</a></li>
+              <li><a href="#about" onClick={() => setActiveSection('about')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium whitespace-nowrap`}>About</a></li>
+              <li><a href="#skills" onClick={() => setActiveSection('skills')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium whitespace-nowrap`}>Skills</a></li>
+              <li><a href="#education" onClick={() => setActiveSection('education')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium whitespace-nowrap`}>Education</a></li>
+              <li><a href="#projects" onClick={() => setActiveSection('projects')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium whitespace-nowrap`}>Projects</a></li>
+              <li><a href="#research" onClick={() => setActiveSection('research')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium whitespace-nowrap`}>Research</a></li>
+              <li><a href="#contact" onClick={() => setActiveSection('contact')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium whitespace-nowrap`}>Contact</a></li>
             </ul>
             
             {/* Mobile Menu Button */}
