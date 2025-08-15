@@ -22,8 +22,8 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="text-xl sm:text-2xl font-bold text-blue-400">Abhinav Pandey</div>
             
-            {/* Desktop Navigation */}
-            <ul className="hidden md:flex space-x-6 lg:space-x-8">
+            {/* Desktop Navigation - Only show on medium screens and up */}
+            <ul className="hidden lg:flex space-x-8">
               <li><a href="#home" onClick={() => setActiveSection('home')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium whitespace-nowrap`}>Home</a></li>
               <li><a href="#about" onClick={() => setActiveSection('about')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium whitespace-nowrap`}>About</a></li>
               <li><a href="#skills" onClick={() => setActiveSection('skills')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium whitespace-nowrap`}>Skills</a></li>
@@ -33,10 +33,10 @@ function App() {
               <li><a href="#contact" onClick={() => setActiveSection('contact')} className={`${isDarkTheme ? 'text-gray-300 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors font-medium whitespace-nowrap`}>Contact</a></li>
             </ul>
             
-            {/* Mobile Menu Button */}
+            {/* Mobile Menu Button - Only show on small screens */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg transition-all duration-300"
+              className="lg:hidden p-2 rounded-lg transition-all duration-300"
               title="Toggle Menu"
             >
               <div className={`w-6 h-0.5 mb-1.5 transition-all duration-300 ${isDarkTheme ? 'bg-white' : 'bg-gray-700'} ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
@@ -54,8 +54,8 @@ function App() {
             </button>
           </div>
           
-          {/* Mobile Navigation Menu */}
-          <div className={`md:hidden transition-all duration-300 ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
+          {/* Mobile Navigation Menu - Only show on small screens */}
+          <div className={`lg:hidden transition-all duration-300 ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
             <ul className="py-4 space-y-2">
               <li><a href="#home" onClick={() => {setActiveSection('home'); setIsMobileMenuOpen(false);}} className={`block py-2 px-4 rounded-lg ${isDarkTheme ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-600 hover:bg-gray-100'} transition-colors font-medium`}>Home</a></li>
               <li><a href="#about" onClick={() => {setActiveSection('about'); setIsMobileMenuOpen(false);}} className={`block py-2 px-4 rounded-lg ${isDarkTheme ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-600 hover:bg-gray-100'} transition-colors font-medium`}>About</a></li>

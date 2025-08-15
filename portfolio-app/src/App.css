@@ -547,8 +547,8 @@ section h2 {
 }
 
 /* Responsive Design - Phone, Tablet, Laptop */
-/* Phone (320px - 768px) */
-@media (max-width: 768px) {
+/* Phone (320px - 1024px) */
+@media (max-width: 1024px) {
   .nav-menu {
     display: none;
   }
