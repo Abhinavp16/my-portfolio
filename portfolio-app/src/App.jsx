@@ -186,7 +186,7 @@ function App() {
                 <div className="absolute -inset-2 sm:-inset-4 rounded-3xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 opacity-40 blur-2xl animate-soft-pulse pointer-events-none"></div>
                 {/* Animated Gradient Border */}
                 <div className="relative rounded-2xl p-[3px] shadow-2xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-gradient-flow" style={{ backgroundSize: '200% 200%' }}>
-                  <div className="w-64 sm:w-72 h-80 sm:h-[28rem] rounded-2xl bg-white dark:bg-gray-900 overflow-hidden">
+                  <div className="w-48 sm:w-56 h-60 sm:h-72 rounded-2xl bg-white dark:bg-gray-900 overflow-hidden">
                     <img
                       src="img1.jpg"
                       alt="Abhinav Pandey"
