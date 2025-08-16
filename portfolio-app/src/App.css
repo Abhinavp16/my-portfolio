@@ -12,7 +12,7 @@
   overflow-x: hidden;
 }
 
-/* Navigation - Single Clean Bar */
+/* Enhanced Navigation Styles */
 .navbar {
   position: fixed;
   top: 0;
@@ -58,6 +58,170 @@
 
 .nav-menu a:hover {
   color: #2563eb;
+}
+
+/* Custom Animations for Navigation */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+  }
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes softPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+/* Navigation Item Hover Effects */
+.nav-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.nav-item:hover::before {
+  left: 100%;
+}
+
+/* Active Navigation State */
+.nav-item.active {
+  animation: pulseGlow 2s infinite;
+}
+
+/* Mobile Menu Animations */
+.mobile-menu-enter {
+  animation: slideInFromTop 0.3s ease-out;
+}
+
+.mobile-menu-exit {
+  animation: slideInFromTop 0.3s ease-out reverse;
+}
+
+/* Theme Toggle Button Animation */
+.theme-toggle {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-toggle:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+/* Logo Animation */
+.logo-container {
+  transition: all 0.3s ease;
+}
+
+.logo-container:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Link Animations */
+.nav-link {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active::after {
+  width: 100%;
+  animation: pulseGlow 2s infinite;
+}
+
+/* Mobile Menu Button Animation */
+.mobile-menu-btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-btn:hover {
+  transform: scale(1.1);
+}
+
+.mobile-menu-btn .hamburger-line {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced Backdrop Blur */
+.backdrop-blur-xl {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+/* Gradient Text Animation */
+.gradient-text {
+  background: linear-gradient(-45deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+  background-size: 400% 400%;
+  animation: gradientFlow 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Hero Section - Proper Visibility */
@@ -547,10 +711,16 @@ section h2 {
 }
 
 /* Responsive Design - Phone, Tablet, Laptop */
-/* Phone (320px - 1024px) */
-@media (max-width: 1024px) {
+/* Phone (320px - 768px) */
+@media (max-width: 768px) {
   .nav-menu {
-    display: none;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .nav-menu a {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
   }
   
   .hero {
@@ -625,6 +795,11 @@ section h2 {
     padding: 0 1.5rem;
   }
   
+  .nav-menu a {
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem;
+  }
+  
   .hero {
     padding: 7rem 1.5rem 3rem 1.5rem;
   }
@@ -671,6 +846,11 @@ section h2 {
     padding: 0 2rem;
   }
   
+  .nav-menu a {
+    font-size: 0.9rem;
+    padding: 1rem 1.5rem;
+  }
+  
   .hero {
     padding: 8rem 2rem 4rem 2rem;
   }
@@ -708,6 +888,15 @@ section h2 {
 
 /* Very small screens */
 @media (max-width: 480px) {
+  .nav-menu {
+    gap: 0.25rem;
+  }
+  
+  .nav-menu a {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.6rem;
+  }
+  
   .hero-content h1 {
     font-size: 1.5rem;
   }
