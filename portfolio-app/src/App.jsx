@@ -180,13 +180,13 @@ function App() {
             </div>
 
             {/* Right Photo Frame - Gradient Flow Border & Ambient Glow */}
-            <div className={`flex justify-center lg:justify-end ${isVisible ? 'animate-fade-in-scale' : ''}`}>
+            <div className={`flex justify-center lg:justify-end ${isVisible ? 'animate-fade-in-scale' : ''} mt-8 sm:mt-12`}>
               <div className="relative group">
                 {/* Ambient Glow */}
                 <div className="absolute -inset-2 sm:-inset-4 rounded-3xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 opacity-40 blur-2xl animate-soft-pulse pointer-events-none"></div>
                 {/* Animated Gradient Border */}
                 <div className="relative rounded-2xl p-[3px] shadow-2xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-gradient-flow" style={{ backgroundSize: '200% 200%' }}>
-                  <div className="w-48 sm:w-56 h-60 sm:h-72 rounded-2xl bg-white dark:bg-gray-900 overflow-hidden">
+                  <div className="w-40 sm:w-48 h-48 sm:h-56 rounded-2xl bg-white dark:bg-gray-900 overflow-hidden">
                     <img
                       src="img1.jpg"
                       alt="Abhinav Pandey"
