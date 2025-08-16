@@ -19,7 +19,7 @@ function App() {
       {/* Navigation */}
       <nav className={`fixed top-0 w-full ${isDarkTheme ? 'bg-gray-900/95' : 'bg-white/95'} backdrop-blur-xl z-50 shadow-2xl border-b ${isDarkTheme ? 'border-gray-700/50' : 'border-gray-200/50'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-16">
             {/* Logo/Brand */}
             <div className="flex items-center space-x-3">
               <div className={`w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg ${isDarkTheme ? 'shadow-blue-500/25' : 'shadow-blue-500/20'}`}>
@@ -142,7 +142,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className={`min-h-screen flex items-center justify-center pt-20 pb-8 ${isDarkTheme ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900' : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'} text-white relative overflow-hidden`}>
+      <section id="home" className={`min-h-screen flex items-center justify-center pt-16 pb-8 ${isDarkTheme ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900' : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'} text-white relative overflow-hidden`}>
         <div className={`absolute inset-0 ${isDarkTheme ? 'bg-black/20' : 'bg-white/20'}`}></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
