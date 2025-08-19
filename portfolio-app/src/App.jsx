@@ -3,7 +3,7 @@ const { useState, useEffect } = React;
 function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isVisible, setIsVisible] = useState(false);
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className={`portfolio-app ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'}`}>
       {/* Navigation */}
-      <nav className={`fixed top-0 w-full ${isDarkTheme ? 'bg-gray-900/95' : 'bg-white/95'} backdrop-blur-xl z-50 shadow-2xl border-b ${isDarkTheme ? 'border-gray-700/50' : 'border-gray-200/50'}`}>
+      <nav className={`fixed top-0 w-full ${isDarkTheme ? 'bg-gray-900' : 'bg-white/95'} backdrop-blur-xl z-50 shadow-2xl border-b ${isDarkTheme ? 'border-gray-700/50' : 'border-gray-200/50'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo/Brand */}
