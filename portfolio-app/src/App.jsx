@@ -142,7 +142,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className={`min-h-screen flex items-center justify-center pt-16 pb-8 ${isDarkTheme ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900' : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'} text-white relative overflow-hidden`}>
+      <section id="home" className={`hero-section min-h-[70vh] flex items-center justify-center pb-8 ${isDarkTheme ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900' : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50'} text-white relative overflow-hidden`} style={{paddingTop: '96px', boxSizing: 'border-box'}}>
         <div className={`absolute inset-0 ${isDarkTheme ? 'bg-black/20' : 'bg-white/20'}`}></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -158,10 +158,7 @@ function App() {
               </div>
               
               <p className={`text-xl opacity-90 leading-relaxed max-w-2xl ${isDarkTheme ? 'text-white' : 'text-gray-700'}`}>
-                Passionate Web Developer transitioning into Full Stack Development with a strong foundation in front-end technologies. 
-                Currently expanding expertise in backend. Adept at tackling technical challenges and developing scalable, high
-                performance web applications. A collaborative team player committed to agile methodologies and continuous learning, with 
-                a focus on delivering end-to-end solutions and optimizing application performance. 
+              I build intuitive and high-performance web applications, turning complex ideas into elegant digital experiences. 
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -179,36 +176,31 @@ function App() {
               </div>
             </div>
 
-            {/* Right Photo Frame - Gradient Flow Border & Ambient Glow */}
-            <div className={`flex justify-center lg:justify-end ${isVisible ? 'animate-fade-in-scale' : ''} mt-8 sm:mt-12`}>
-              <div className="relative group">
-                {/* Ambient Glow */}
-                <div className="absolute -inset-2 sm:-inset-4 rounded-3xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 opacity-40 blur-2xl animate-soft-pulse pointer-events-none"></div>
-                {/* Animated Gradient Border */}
-                <div className="relative rounded-2xl p-[3px] shadow-2xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-gradient-flow" style={{ backgroundSize: '200% 200%' }}>
-                  <div className="w-48 sm:w-56 h-56 sm:h-64 rounded-2xl bg-white dark:bg-gray-900 overflow-hidden">
-                    <img
-                      src="img1.jpg"
-                      alt="Abhinav Pandey"
-                      className="w-full h-full object-cover object-center z-10 transition-transform duration-700 group-hover:scale-105"
-                      style={{ transition: 'transform 0.7s' }}
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'flex';
-                      }}
-                    />
-                    {/* Fallback placeholder if image fails to load */}
-                    <div className="absolute inset-0 flex items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 text-white text-center" style={{display: 'none'}}>
-                      <div>
-                        <div className="text-6xl mb-4">👨‍💻</div>
-                        <div className="text-xl font-semibold">Abhinav Pandey</div>
-                        <div className="text-sm opacity-90">Web Developer</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          {/* Right Photo - Small LinkedIn Profile Size */}
+<div
+  className={`flex justify-center lg:justify-end ${
+    isVisible ? "animate-float-in" : ""
+  } mt-8 sm:mt-12 mb-8 sm:mb-12`}
+>
+  <div className="relative">
+    {/* Small profile photo - LinkedIn size */}
+    <div className="w-30 h-30 rounded-full overflow-hidden shadow-lg border-4 border-blue-500 bg-white">
+      <img
+        src="img1.jpg"
+        alt="Abhinav Pandey"
+        className="w-full h-full object-cover"
+      />
+      
+      {/* Fallback placeholder if image fails to load */}
+      <div className="absolute inset-0 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-purple-600 text-white text-center hidden">
+        <div>
+          <div className="text-2xl mb-1">👨‍💻</div>
+          <div className="text-xs font-semibold">AP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </section>
@@ -220,13 +212,17 @@ function App() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-6 animate-slide-up">
               <p className={`text-lg leading-relaxed ${isDarkTheme ? 'text-gray-300' : 'text-gray-700'}`}>
-                I am a passionate Web Developer transitioning into Full Stack Development with a strong foundation in front-end technologies. 
-                Currently expanding my expertise in backend development to deliver comprehensive solutions.
+              As a passionate developer, my journey into the world of technology has been driven by a fascination with solving 
+              complex problems. I began by building a strong foundation in front-end technologies, creating responsive and engaging user interfaces. 
+              Now, I am enthusiastically transitioning into a Full Stack role, expanding my expertise into backend development to architect and deliver comprehensive, high-performance web applications.
               </p>
               <p className={`text-lg leading-relaxed ${isDarkTheme ? 'text-gray-300' : 'text-gray-700'}`}>
-                Adept at tackling technical challenges and developing scalable, high-performance web applications. 
-                A collaborative team player committed to agile methodologies and continuous learning, with a focus on 
-                delivering end-to-end solutions and optimizing application performance.
+              I am a collaborative team player committed to agile methodologies and the principles of continuous learning. 
+              My focus is on writing clean, scalable code and optimizing application performance from end-to-end. 
+              I thrive in environments where I can tackle technical challenges and contribute to building products that not only
+               function flawlessly but also provide a seamless user experience.
+
+
               </p>
             </div>
             <div className="grid grid-cols-3 gap-6 animate-slide-up">
